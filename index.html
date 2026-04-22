@@ -6,6 +6,216 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: violet;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background:white;
+
+}
+
+.logo {
+    background:violet;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: rebeccapurple;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background: white;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.badge {
+    background:rebeccapurple;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.hero h1 {
+    margin: 20px 0;
+    font-size: 28px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: violet;
+    color:white;
+ 
+}
+
+.btn-secondary {
+    background:rgb(237, 232, 232);
+    
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.stats div {
+    background:violet;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* IMAGE */
+.hero-img img {
+    width: 250px;
+    border-radius: 20px;
+}
+
+/* ABOUT */
+.about {
+    padding: 40px;
+    text-align: center;
+  
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* PROJECTS */
+.projects {
+    padding: 40px;
+    text-align: center;
+   
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 10px;
+}
+
+/* PROFILE */
+.profile {
+    text-align: center;
+    padding: 40px;
+    
+}
+
+.profile-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.profile-box div {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+.contact {
+    background:rebeccapurple;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-box {
+        flex-direction: column;
+    }
+}
+    </style>
 
 <header class="header">
     <div class="logo">NAN</div>
