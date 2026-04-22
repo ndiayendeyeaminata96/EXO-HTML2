@@ -24,6 +24,9 @@ body {
     justify-content: space-between;
     padding: 20px 50px;
     background:white;
+    position:fixed;
+    width: 100%;
+    
 
 }
 
@@ -48,6 +51,9 @@ nav a {
     background: white;
     margin: 20px;
     border-radius: 20px;
+}
+body{
+    padding-top: ;
 }
 
 .hero-text {
@@ -193,28 +199,114 @@ footer {
     padding: 20px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+
+    .header {
+        padding: 15px 30px;
+    }
+
     .hero {
         flex-direction: column;
+        text-align: center;
+        padding: 30px;
     }
 
     .hero-text {
         width: 100%;
     }
 
-    .project-grid {
-        grid-template-columns: 1fr;
+    .hero-img {
+        margin-top: 20px;
     }
 
+    .stats {
+        justify-content: center;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .profile-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* HEADER */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 5px 10px;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .hero-img img {
+        width: 180px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* STATS */
+    .stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* ABOUT */
     .about-grid {
         grid-template-columns: 1fr;
     }
 
+    /* PROJECTS */
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* PROFILE */
     .profile-box {
         flex-direction: column;
+        gap: 10px;
+    }
+
+    /* CONTACT */
+    .contact {
+        padding: 25px;
     }
 }
+
+
+
+
+
     </style>
 
 <header class="header">
